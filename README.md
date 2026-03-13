@@ -5,5 +5,6 @@ I was tired of transferring photos and files from my PC to other devices via the
 **Things to add:**
 - Add QR code support for easy downloading
 - Seamless sharing experience
+- Native support for more Operating Systems.
 - and more...
 
