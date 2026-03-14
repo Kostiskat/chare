@@ -1,5 +1,7 @@
 # chare
 
+<img width="443" height="317" alt="Image" src="https://github.com/user-attachments/assets/5535727b-80b3-46bb-a41a-8f941ca6e1a3" />
+
 ###### (C + share) not related to chairs 🪑 <br> <br>
 
 I am tired of transferring photos and files from my PC to other devices via the cloud. So I made this tool to do it locally.
