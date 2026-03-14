@@ -17,8 +17,8 @@ char local_ip[100];
 
 
 void handle_sigint(int sig) {
-    printf("shutting down chare server...");
-    keep_running = 0;
+    printf("aborting...\n");
+    exit(0);
 }
 
 int main(const int argc, char *argv[]) {
@@ -35,7 +35,7 @@ int main(const int argc, char *argv[]) {
 
     const int server_fd = init_server(PORT);
     printf("chare server live on %s:%d.\n", local_ip, PORT);
-    printf("you may scan the qr code with a mobile device to instantly download the file!\n");
+    printf("you may scan the qr code with a mobile device to instantly download the file!\n\n");
 
     char qr_command[256];
     snprintf(qr_command, sizeof(qr_command), "qrencode -t UTF8 \"http://%s:%d\"\n", local_ip, PORT); // HTTP links are fine since this is running locally
