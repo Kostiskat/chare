@@ -2,7 +2,7 @@
 
 I am tired of transferring photos and files from my PC to other devices via the cloud. So I made this tool to do it locally.
 
-It uses qrencode and web sockets to quickly send files on **Linux** to other devices on the network via sendfile. 
+It uses qrencode and web sockets to quickly send files from **Linux** to other devices on the network via sendfile. 
 
 **Installation Instructions & How to Use:**
 - Download the source code
