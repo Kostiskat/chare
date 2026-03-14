@@ -10,7 +10,7 @@ void handle_client(const int client_socket, const char *filepath) {
     printf("new client connected. processing request...\n");
 
     char buffer[4096];
-    ssize_t bytes_read = recv(client_socket, buffer, sizeof(buffer) - 1, 0);
+    const ssize_t bytes_read = recv(client_socket, buffer, sizeof(buffer) - 1, 0);
 
     if (bytes_read > 0) {
         buffer[bytes_read] = '\0';
@@ -26,7 +26,7 @@ void handle_client(const int client_socket, const char *filepath) {
     }
 
     fseek(file, 0, SEEK_END);
-    long fsize = ftell(file);
+    const long fsize = ftell(file);
     fclose(file);
 
     char response_header[512];
